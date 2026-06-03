@@ -1,15 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
-import "./App.css";
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './component/pages/Home.jsx';
+
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Open Source Platform</h1>
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>);
+
 }
 
 export default App;
