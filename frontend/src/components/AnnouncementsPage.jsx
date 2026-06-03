@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { announcements } from "../../../../assoc-magazine/src/data/announcements";
+import { announcements } from "../data/announcements";
+import Navbar from "../component/layout/Navbar";
 import FeaturedCard from "./FeaturedCard";
+import HeroSection from "./HeroSection";
 import SideCard from "./SideCard";
 import MiniCard from "./MiniCard";
 import FilterBar from "./FilterBar";
@@ -16,13 +18,22 @@ export default function AnnouncementsPage() {
 
   const sideCards = filtered.slice(0, 3);
   const miniCards = filtered.slice(3);
+  
+  
 
   return (
     <>
+      <Navbar />
+      <HeroSection />
       <section className="relative z-10 max-w-7xl mx-auto px-8 pt-12 pb-20">
 
+
+
+  
+     
+
         {/* Section header */}
-        <div className="flex items-end justify-between mb-8 opacity-0 animate-fade-up-2">
+        <div className="flex items-end justify-between mb-8 ">
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="h-px w-6 bg-gradient-to-r from-violet-DEFAULT to-transparent" />
@@ -53,8 +64,7 @@ export default function AnnouncementsPage() {
         {featured && (
           <div className="grid gap-4 mb-4" style={{ gridTemplateColumns: "1fr 320px" }}>
             {/* Featured spotlight */}
-            <FeaturedCard item={featured} />
-
+             <FeaturedCard item={featured} />
             {/* Side stack — overflow hidden so cards don't bleed right */}
             <div className="flex flex-col gap-3 min-w-0 overflow-hidden">
               {sideCards.length > 0
@@ -110,6 +120,7 @@ export default function AnnouncementsPage() {
         <div className="font-body text-[11px] text-white/25">
           © 2026 ASOC. All rights reserved.
         </div>
+
       </footer>
     </>
   );

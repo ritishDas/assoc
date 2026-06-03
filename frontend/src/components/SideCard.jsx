@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { colorMap } from "../../../../assoc-magazine/src/data/announcements";
+import { colorMap } from "../data/announcements";
 
 const ICONS = {
   violet: (
@@ -40,7 +40,7 @@ export default function SideCard({ item, animDelay = 0 }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className={`relative rounded-xl p-4 border transition-all duration-250 cursor-pointer
-                  card-glass opacity-0 animate-fade-up
+                  card-glass  
                   ${cm.border}
                   ${hovered ? "border-opacity-60 -translate-y-0.5 shadow-card" : "border-opacity-30"}`}
       style={{ animationDelay: `${animDelay}s`, animationFillMode: "both" }}

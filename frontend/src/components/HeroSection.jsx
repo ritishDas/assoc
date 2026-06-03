@@ -29,7 +29,7 @@ export default function HeroSection() {
       {/* Hero content */}
       <div className="relative z-10 max-w-7xl mx-auto px-8 pt-16 pb-0 flex items-start gap-12">
         {/* Left */}
-        <div className="flex-1 opacity-0 animate-fade-up-1">
+        <div className="flex-1 ">
           <div className="inline-flex items-center gap-2 mb-5">
             <div className="h-px w-8 bg-gradient-to-r from-violet-DEFAULT to-transparent" />
             <span className="font-mono text-[10px] font-bold tracking-[0.22em] uppercase text-violet-DEFAULT">
@@ -69,7 +69,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right — Constellation SVG illustration */}
-        <div className="w-[240px] flex-shrink-0 opacity-0 animate-fade-up-2 animate-float">
+        <div className="w-[240px] flex-shrink-0   animate-float">
           <svg viewBox="0 0 240 200" width="240" height="200" xmlns="http://www.w3.org/2000/svg">
             {/* Planet */}
             <circle cx="120" cy="120" r="58" fill="#100d4a" stroke="rgba(139,92,246,0.28)" strokeWidth="1"/>

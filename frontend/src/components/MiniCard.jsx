@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { colorMap } from "../../../../assoc-magazine/src/data/announcements";
-
+import { colorMap } from "../data/announcements";
 export default function MiniCard({ item, animDelay = 0 }) {
   const [hovered, setHovered] = useState(false);
   const cm = colorMap[item.color];
@@ -10,8 +9,7 @@ export default function MiniCard({ item, animDelay = 0 }) {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className={`relative rounded-xl p-4 border card-glass cursor-pointer
-                  transition-all duration-250 opacity-0 animate-fade-up overflow-hidden
-                  ${cm.border}
+                  transition-all duration-250 
                   ${hovered ? "-translate-y-0.5 shadow-card" : ""}`}
       style={{ animationDelay: `${animDelay}s`, animationFillMode: "both" }}
     >

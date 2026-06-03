@@ -1,5 +1,5 @@
 import React from "react";
-import { filterOptions } from "../../../../assoc-magazine/src/data/announcements";
+import { filterOptions } from "../data/announcements";
 
 export default function FilterBar({ active, onChange }) {
   return (

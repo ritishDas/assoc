@@ -64,7 +64,7 @@ export default function EventSection() {
               variants={fadeUpVariant}
               className="bg-brand2 p-8 rounded-2xl border border-white/5 hover:border-white/20 transition-all hover:-translate-y-2 relative group"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10  group-hover:opacity-100 transition-opacity rounded-2xl" />
               <div className="mb-6 bg-brand1 w-16 h-16 rounded-xl flex items-center justify-center border border-white/5 relative z-10">
                 {step.icon}
               </div>
