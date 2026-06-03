@@ -1,6 +1,5 @@
 import React from "react";
-import { stats } from "../../../../assoc-magazine/src/data/announcements";
-
+import { stats } from "../data/announcements";
 export default function StatsBar() {
   return (
     <div className="grid grid-cols-4 border-t border-white/[0.07]"
