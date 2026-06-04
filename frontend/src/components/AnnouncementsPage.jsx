@@ -22,7 +22,9 @@ export default function AnnouncementsPage() {
   
 
   return (
-    <>
+    <div style={{ background: "#06091b", minHeight: "100vh", color: "#fff" }}>
+
+   
       <Navbar />
       <HeroSection />
       <section className="relative z-10 max-w-7xl mx-auto px-8 pt-12 pb-20">
@@ -122,6 +124,7 @@ export default function AnnouncementsPage() {
         </div>
 
       </footer>
-    </>
+    </div>
+   
   );
 }

@@ -27,7 +27,7 @@ export default function Navbar() {
             Contributors
           </Link>
           <Link
-             to="/announcements"
+             to="/announcement"
              className="hover:opacity-100 transition-opacity"
 
             >
