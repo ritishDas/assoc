@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="flex items-center gap-6 lg:gap-10">
         <h2 className="font-black text-2xl tracking-tighter">ASOC</h2>
 
-        <div className="hidden lg:flex items-center gap-8 text-sm font-medium opacity-80">
+        <div className="max-lg:hidden flex items-center gap-8 text-sm font-medium opacity-80">
           <Link to="/about" className="hover:opacity-100 transition-opacity">
             About
           </Link>
