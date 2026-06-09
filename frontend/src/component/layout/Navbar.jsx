@@ -11,7 +11,7 @@ export default function Navbar() {
       className="absolute top-0 left-0 right-0 z-50 flex justify-between items-center px-4 sm:px-6 lg:px-16 py-6"
     >
       <div className="flex items-center gap-6 lg:gap-10">
-        <h2 className="font-black text-2xl tracking-tighter">ASOC</h2>
+        <h2 className="font-black text-2xl tracking-tighter"><Link to='/'>ASOC</Link></h2>
 
         <div className="max-lg:hidden flex items-center gap-8 text-sm font-medium opacity-80">
           <Link to="/about" className="hover:opacity-100 transition-opacity">
@@ -27,11 +27,11 @@ export default function Navbar() {
             Contributors
           </Link>
           <Link
-             to="/announcement"
-             className="hover:opacity-100 transition-opacity"
+            to="/announcement"
+            className="hover:opacity-100 transition-opacity"
 
-            >
-             Announcements
+          >
+            Announcements
           </Link>
           <Link to="/events" className="hover:opacity-100 transition-opacity">
             Events

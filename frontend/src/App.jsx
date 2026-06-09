@@ -8,6 +8,9 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/announcement' element={<AnnouncementsPage />} />
+      {/* <Route path='/resources' element={<ResourcePage />} />*/}
+      {    /* <Route path='/about' element={<About />} />  */}
+      {/* <Route path='/project' element={<Project />} />   */}
     </Routes>
   );
 }

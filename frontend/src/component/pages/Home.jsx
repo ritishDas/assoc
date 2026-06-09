@@ -15,6 +15,7 @@ import Hero from "@/component/home/Hero";
 import WhyJoin from "@/component/home/WhyJoin";
 import Stats from "@/component/home/Stats";
 import EventSection from "@/component/home/EventSection";
+import { InteractiveNetworkBackground } from "../interactive-network-background";
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -26,7 +27,7 @@ function Home() {
     // @ts-ignore
     if (window.particlesJS) {
       // @ts-ignore
-      window.particlesJS.load("star", "/net.json", function () {
+      window.particlesJS.load("star", "/net.json", function() {
         console.log("callback - particles.js config loaded");
       });
     }
@@ -107,7 +108,8 @@ function Home() {
             />
 
             {/* Stars */}
-            <div id="star" className="absolute inset-0" />
+            // <div id="star" className="absolute inset-0" />
+            <InteractiveNetworkBackground />
 
             {/* Content */}
             <div className="relative z-20 max-w-xl p-10 md:p-20">
