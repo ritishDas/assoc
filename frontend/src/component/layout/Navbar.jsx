@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // Ensure lucide-react is installed
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navLinks = [
     { to: "/about", label: "About" },
@@ -38,15 +39,15 @@ export default function Navbar() {
 
           {/* Desktop Buttons - Shows on tablets/laptops and up */}
           <div className="desk items-center gap-3">
-            <Button
-              variant="ghost"
-              className="hover:bg-white/10 rounded-full px-6 border border-white text-white"
+            <Link
+              to='/login'
+              className="hover:bg-white/10 p-2 rounded-full px-6 border border-white text-white"
             >
               Login
-            </Button>
-            <Button className="buttonGradient rounded-full px-6 font-semibold">
+            </Link>
+            <Link to='/resources' className="p-2 buttonGradient rounded-full px-6 font-semibold">
               Get Started
-            </Button>
+            </Link>
           </div>
 
           {/* Mobile/Tablet Menu Toggle Button - Now hides at md (768px) instead of lg */}
@@ -78,11 +79,12 @@ export default function Navbar() {
           <div className="flex flex-col gap-2 pt-2">
             <Button
               variant="ghost"
+              onClick={() => navigate('/login')}
               className="w-full hover:bg-white/10 rounded-full border border-white text-white"
             >
               Login
             </Button>
-            <Button className="w-full buttonGradient rounded-full font-semibold">
+            <Button onClick={() => navigate('/resources')} className="w-full buttonGradient rounded-full font-semibold">
               Get Started
             </Button>
           </div>
