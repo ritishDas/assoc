@@ -2,6 +2,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './component/pages/Home.jsx';
 import AnnouncementsPage from './components/AnnouncementsPage';
+import AboutPage from './components/AboutPage';
 import Project from './component/pages/Project.jsx';
 import Resources from './component/pages/Resources.jsx';
 
@@ -10,11 +11,15 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/announcement' element={<AnnouncementsPage />} />
+
+      <Route path='/about' element={<AboutPage />} />
+
       <Route path='/projects' element={<Project />} />
       <Route path='/resources' element={<Resources />} />
       {/* <Route path='/resources' element={<ResourcePage />} />*/}
       {    /* <Route path='/about' element={<About />} />  */}
       {/* <Route path='/project' element={<Project />} />   */}
+
     </Routes>
   );
 }
