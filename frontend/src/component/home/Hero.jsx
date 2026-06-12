@@ -5,7 +5,7 @@ export default function Hero() {
 
   useEffect(() => {
 
-    window.particlesJS.load('hero', '/partical.json', function () {
+    window.particlesJS.load('hero', '/partical.json', function() {
       console.log('callback - particles.js config loaded');
     });
 

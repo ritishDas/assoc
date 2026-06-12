@@ -10,12 +10,17 @@ import {
 } from "@/components/ui/accordion";
 
 import Navbar from "@/component/layout/Navbar";
-import Footer from "@/component/layout/Footer";
-import Hero from "@/component/home/Hero";
+// import Footer from "@/component/layout/Footer";
+// import Hero from "@/component/home/Hero";
 import WhyJoin from "@/component/home/WhyJoin";
 import Stats from "@/component/home/Stats";
 import EventSection from "@/component/home/EventSection";
 import { InteractiveNetworkBackground } from "../interactive-network-background";
+import Hero from "../home/Hero";
+import Footer from "../../components/footer";
+
+
+
 
 const fadeUpVariant = {
   hidden: { opacity: 0, y: 20 },
@@ -23,15 +28,15 @@ const fadeUpVariant = {
 };
 
 function Home() {
-  useEffect(() => {
-    // @ts-ignore
-    if (window.particlesJS) {
-      // @ts-ignore
-      window.particlesJS.load("star", "/net.json", function() {
-        console.log("callback - particles.js config loaded");
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   // // @ts-ignore
+  //    if (window.particlesJS) {
+  //      // @ts-ignore
+  //      window.particlesJS.load("star", "/net.json", function() {
+  //        console.log("callback - particles.js config loaded");
+  //      });
+  //    }
+  // }, []);
 
   return (
     <div className="min-h-screen bg-brand1 text-white overflow-x-hidden selection:bg-brand2">
@@ -200,6 +205,7 @@ function Home() {
       </section>
 
       {/* Footer */}
+      {/* <Footer /> */}
       <Footer />
     </div>
   );

@@ -20,12 +20,12 @@ export default function Navbar() {
           <Link to="/projects" className="hover:opacity-100 transition-opacity">
             Projects
           </Link>
-          <Link
-            to="/contributors"
-            className="hover:opacity-100 transition-opacity"
-          >
-            Contributors
-          </Link>
+          {/* <Link */}
+          {/*   to="/contributors" */}
+          {/*   className="hover:opacity-100 transition-opacity" */}
+          {/* > */}
+          {/*   Contributors */}
+          {/* </Link> */}
           <Link
             to="/announcement"
             className="hover:opacity-100 transition-opacity"
@@ -33,9 +33,9 @@ export default function Navbar() {
           >
             Announcements
           </Link>
-          <Link to="/events" className="hover:opacity-100 transition-opacity">
-            Events
-          </Link>
+          {/* <Link to="/events" className="hover:opacity-100 transition-opacity"> */}
+          {/*   Events */}
+          {/* </Link> */}
           <Link
             to="/resources"
             className="hover:opacity-100 transition-opacity"
@@ -45,7 +45,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="hidden sm:flex items-center gap-3">
+      <div className="sm:flex items-center gap-3">
         <Button
           variant="ghost"
           className="hover:bg-white/10 rounded-full px-6 border border-white"
