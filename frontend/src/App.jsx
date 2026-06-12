@@ -7,12 +7,16 @@ import Login from "./components/pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Community from "./components/pages/Community";
 import Resources from './components/pages/Resources.jsx';
+import AboutPage from './components/AboutPage';
 
 function App() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/announcement' element={<AnnouncementsPage />} />
+
+      <Route path='/about' element={<AboutPage />} />
+
       <Route path='/projects' element={<Project />} />
       <Route path='/resources' element={<Resources />} />
 
@@ -28,6 +32,7 @@ function App() {
       {/* <Route path='/resources' element={<ResourcePage />} />*/}
       {    /* <Route path='/about' element={<About />} />  */}
       {/* <Route path='/project' element={<Project />} />   */}
+
     </Routes>
   );
 }
