@@ -151,7 +151,7 @@ const Login = () => {
               className="cursor-pointer mt-8 flex w-full items-center justify-center gap-3 rounded-lg bg-white px-4 py-3 font-medium text-black transition hover:bg-gray-200"
             >
               <img
-                src="https://www.svgrepo.com/show/475656/google-color.svg"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Google_Favicon_2025.svg/330px-Google_Favicon_2025.svg.png"
                 alt="Google"
                 className="h-5 w-5"
               />

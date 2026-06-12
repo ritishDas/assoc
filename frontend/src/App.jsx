@@ -2,11 +2,11 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './component/pages/Home.jsx';
 import AnnouncementsPage from './components/AnnouncementsPage';
-import Project from './component/pages/Project.jsx';
+import Project from './components/pages/Project.jsx';
 import Login from "./components/pages/Login";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Community from "./components/pages/Community";
-import Resources from './component/pages/Resources.jsx';
+import Resources from './components/pages/Resources.jsx';
 
 function App() {
   return (
